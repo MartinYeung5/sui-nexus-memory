@@ -1,0 +1,24 @@
+{
+  "name": "nexus-memory",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Verifiable collaborative memory layer for multi-agents, built on Walrus + Sui.",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm --filter @nexus-memory/web dev",
+    "web": "pnpm --filter @nexus-memory/web dev",
+    "web:build": "pnpm --filter @nexus-memory/web build",
+    "sdk:build": "pnpm --filter @nexus-memory/sdk build",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.12.0"
+  }
+}

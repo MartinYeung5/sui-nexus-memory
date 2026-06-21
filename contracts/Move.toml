@@ -1,0 +1,12 @@
+[package]
+name = "NexusMemory"
+edition = "2024.beta"
+
+# NOTE: We intentionally do NOT declare an explicit dependency on Sui / MoveStdlib.
+# Modern `sui client publish` automatically injects Bridge, MoveStdlib, Sui and
+# SuiSystem at the exact version of the CLI you are running. Pinning a Git rev
+# (e.g. framework/testnet) frequently desyncs from older CLIs and produces
+# "Could not resolve the name 'internal'" style errors. Let the toolchain decide.
+
+[addresses]
+nexus_memory = "0x0"

@@ -1,0 +1,84 @@
+{
+  "brand": "Nexus Memory",
+  "tagline": "Verifiable Collaborative Memory Layer for Multi-Agents",
+  "home": {
+    "heroTitle": "Verifiable Collaborative Memory Layer for Multi-Agents",
+    "heroDesc": "Built on Walrus decentralized storage and the Sui blockchain. Break the goldfish dilemma — give AI agents persistent, portable, and shareable memory.",
+    "enter": "Open Console",
+    "docs": "Developer Docs",
+    "feature1Title": "Verifiability",
+    "feature1Desc": "Cryptographic proof of memory integrity",
+    "feature2Title": "Portability",
+    "feature2Desc": "Seamless migration across models and providers",
+    "feature3Title": "Shareability",
+    "feature3Desc": "Shared memory pools for multi-agent collaboration"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "agents": "Agents",
+    "memories": "Memories",
+    "spaces": "Spaces",
+    "artifacts": "Artifacts",
+    "permissions": "Permissions",
+    "settings": "Settings",
+    "help": "Help",
+    "wallet": "Wallet"
+  },
+  "agent": {
+    "new": "New Agent",
+    "name": "Name",
+    "model": "Model",
+    "list": "Agent List",
+    "workbench": "Agent Workbench",
+    "create": "Create",
+    "ownerPh": "owner wallet",
+    "namePh": "agent name",
+    "modelPh": "model name"
+  },
+  "memory": {
+    "title": "Memory Management",
+    "search": "Semantic Search",
+    "create": "Add Memory",
+    "verifyOk": "Integrity Verified",
+    "verifyFail": "Verification Failed",
+    "placeholder": "Describe what you want to find in natural language...",
+    "agentIdOpt": "Agent ID (optional)",
+    "agentIdReq": "Agent ID",
+    "contentPh": "Memory content...",
+    "writeBtn": "Write to Walrus",
+    "searching": "Searching..."
+  },
+  "spaces": {
+    "title": "Shared Spaces",
+    "namePh": "space name",
+    "ownerPh": "owner wallet",
+    "create": "Create"
+  },
+  "artifacts": {
+    "title": "Artifact Repository",
+    "agentPh": "Agent ID (optional)",
+    "upload": "Upload to Walrus"
+  },
+  "permissions": {
+    "title": "Permissions & Audit",
+    "desc": "Off-chain log of all memory / agent operations (on-chain events are emitted to Sui)"
+  },
+  "settings": {
+    "title": "System Settings",
+    "language": "Language",
+    "apiKeys": "API Keys (read-only, configure in .env.local)"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "agents": "Total Agents",
+    "agentsHint": "active agents",
+    "memories": "Memory Entries",
+    "memoriesHint": "encrypted blobs",
+    "spaces": "Shared Spaces",
+    "spacesHint": "shared workspaces",
+    "artifacts": "Artifacts",
+    "artifactsHint": "stored on Walrus",
+    "recentAudit": "Recent Audit",
+    "recentAuditDesc": "A traceable log of every on-chain and off-chain memory operation will appear here."
+  }
+}

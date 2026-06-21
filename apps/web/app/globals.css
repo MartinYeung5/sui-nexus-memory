@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F5F0E1;
+  --ink: #2C2C2C;
+}
+
+html, body { background: var(--bg); color: var(--ink); }
+
+/* Ink-spread fade-in animation for page transitions */
+@keyframes inkSpread {
+  0%   { opacity: 0; transform: scale(0.9); filter: blur(8px); }
+  100% { opacity: 1; transform: scale(1);   filter: blur(0); }
+}
+.ink-in { animation: inkSpread 0.8s ease-out both; }
+
+.scroll-divider {
+  background: linear-gradient(90deg, transparent, #5C4B3A55, transparent);
+  height: 1px;
+}
+
+/* ───── Style overrides for @mysten/dapp-kit ConnectButton ─────
+   We map the default purple/teal buttons to the Neo-Chinese palette. */
+.nexus-connect button[data-testid="connect-button"],
+.nexus-connect button.connect-wallet-button,
+.nexus-connect button[type="button"][aria-haspopup="dialog"] {
+  background: #A93226 !important;      /* cinnabar */
+  color: #F5F0E1 !important;            /* rice */
+  border-radius: 2px !important;
+  padding: 6px 14px !important;
+  font-family: inherit !important;
+  font-weight: 500 !important;
+  border: none !important;
+  box-shadow: 0 1px 0 rgba(0,0,0,.08);
+  transition: background .15s ease;
+}
+.nexus-connect button[data-testid="connect-button"]:hover,
+.nexus-connect button.connect-wallet-button:hover,
+.nexus-connect button[type="button"][aria-haspopup="dialog"]:hover {
+  background: #5C4B3A !important;       /* wood on hover */
+}

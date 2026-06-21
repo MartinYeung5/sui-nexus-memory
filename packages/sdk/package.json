@@ -1,0 +1,17 @@
+{
+  "name": "@nexus-memory/sdk",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "ai": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
